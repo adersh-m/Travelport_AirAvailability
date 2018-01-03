@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<p>Air Service availability</p>
+
+<div class="row">
+    <table>
+        <tr>
+            <td>
+                Origin
+            </td>
+            <td>
+                <input type="text" id="txtOrigin" />
+            </td>
+
+            <td>
+                Destination
+            </td>
+            <td>
+                <input type="text" id="txtDestination" />
+            </td>
+            <td>
+                Departure Date
+            </td>
+            <td>
+                <input type="text" id="txtDepartureDate" />
+            </td>
+        </tr>
+    </table>
+
+    <button type="button" value="Search" id="searchAvail">Search Air Availability</button>
+    <button type="button" value="Search" id="searchLowFare">Search Low Fare Shopping</button>
+    <div id="searchResp"></div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#searchAvail").click(function () {
+            var searchData = {
+                Origin: $("#txtOrigin").val(),
+                Destination: $("#txtDestination").val(),
+                FromDate: $("#txtDepartureDate").val()
+            }
+            $.ajax('@Url.Action("Availability","Home")',
+            {
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(searchData),
+                success: function (data) {
+                    if (data !== null) {
+                        $("#searchResp").html(JSON.stringify(data));
+                    }
+                },
+                error: function (resp) {
+                    alert(resp);
+                }
+            })
+        });
+        $("#searchLowFare").click(function () {
+            var searchData = {
+                Origin: $("#txtOrigin").val(),
+                Destination: $("#txtDestination").val(),
+                FromDate: $("#txtDepartureDate").val(),
+            }
+            $.ajax('@Url.Action("LowFareShop", "Home")',
+            {
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(searchData),
+                success: function (data) {
+                    if (data !== null) {
+                        var html = "<table >"
+                        for (var i = 0; i < data.AirAvailabilityResponse.length; i++) {
+                            html += "<tr><td >" + data.AirAvailabilityResponse[i].Amount + "</td><td style='border:1px solid black'><table>";
+                            for (var j = 0; j < data.AirAvailabilityResponse[i].AirAvailabilityResult.length; j++) {
+                                html += "<tr><td><b>" + data.AirAvailabilityResponse[i].AirAvailabilityResult[j].From + "</b></td><td>" + data.AirAvailabilityResponse[i].AirAvailabilityResult[j].DepartureTime + "</td><td><b>" + data.AirAvailabilityResponse[i].AirAvailabilityResult[j].To + "</b></td><td>" + data.AirAvailabilityResponse[i].AirAvailabilityResult[j].ArrivalTime + "</td><td><b>" + data.AirAvailabilityResponse[i].AirAvailabilityResult[j].Carrier + "</b></td></tr>";
+
+                            }
+                            html += "</td><td><input type='button' value='Book Now'/></td></tr></table>";
+                        }
+                        html += "</table>";
+                        $("#searchResp").html(html);
+                    }
+                },
+                error: function (resp) {
+                    alert(resp);
+                }
+            })
+        });
+        function GetAirPrice() {
+
+        }
+
+    });
+</script>

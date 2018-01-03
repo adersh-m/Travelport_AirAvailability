@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9f86e252-066e-4dc7-81ac-8a3b2befe3ee" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="D:\Rineesh\Confidential\LOGISTICS\GALILEO\travelport-uapi-tutorial-c-sharp-master\travelport-uapi-tutorial-c-sharp-master\ConsoleApplication1\ConsoleApplication1\Wsdl\universal_v40_0\UniversalRecord.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SessionContext_v1.xsd" MetadataType="Schema" ID="b829d29e-a86d-44ac-8a5c-58959f0e963b" SourceId="1" SourceUrl="file:///D:/Rineesh/Confidential/LOGISTICS/GALILEO/travelport-uapi-tutorial-c-sharp-master/travelport-uapi-tutorial-c-sharp-master/ConsoleApplication1/ConsoleApplication1/Wsdl/SessionContext_v1/SessionContext_v1.xsd" />
+    <MetadataFile FileName="CommonReqRsp.xsd" MetadataType="Schema" ID="ce00121e-bb5d-4d6a-ac46-28c13427e678" SourceId="1" SourceUrl="file:///D:/Rineesh/Confidential/LOGISTICS/GALILEO/travelport-uapi-tutorial-c-sharp-master/travelport-uapi-tutorial-c-sharp-master/ConsoleApplication1/ConsoleApplication1/Wsdl/common_v40_0/CommonReqRsp.xsd" />
+    <MetadataFile FileName="Vehicle.xsd" MetadataType="Schema" ID="9a5621c5-23f3-4de5-a9ca-87ac66b0bd6a" SourceId="1" SourceUrl="file:///D:/Rineesh/Confidential/LOGISTICS/GALILEO/travelport-uapi-tutorial-c-sharp-master/travelport-uapi-tutorial-c-sharp-master/ConsoleApplication1/ConsoleApplication1/Wsdl/vehicle_v40_0/Vehicle.xsd" />
+    <MetadataFile FileName="Common.xsd" MetadataType="Schema" ID="4e31445b-d765-4f63-8e70-4885c51f594d" SourceId="1" SourceUrl="file:///D:/Rineesh/Confidential/LOGISTICS/GALILEO/travelport-uapi-tutorial-c-sharp-master/travelport-uapi-tutorial-c-sharp-master/ConsoleApplication1/ConsoleApplication1/Wsdl/common_v40_0/Common.xsd" />
+    <MetadataFile FileName="UniversalRecordReqRsp.xsd" MetadataType="Schema" ID="dd1c367f-1e33-4620-91a2-0932b41e573f" SourceId="1" SourceUrl="file:///D:/Rineesh/Confidential/LOGISTICS/GALILEO/travelport-uapi-tutorial-c-sharp-master/travelport-uapi-tutorial-c-sharp-master/ConsoleApplication1/ConsoleApplication1/Wsdl/universal_v40_0/UniversalRecordReqRsp.xsd" />
+    <MetadataFile FileName="Hotel.xsd" MetadataType="Schema" ID="6cc70c05-aaf5-4d01-96d1-b953f6bef9be" SourceId="1" SourceUrl="file:///D:/Rineesh/Confidential/LOGISTICS/GALILEO/travelport-uapi-tutorial-c-sharp-master/travelport-uapi-tutorial-c-sharp-master/ConsoleApplication1/ConsoleApplication1/Wsdl/hotel_v40_0/Hotel.xsd" />
+    <MetadataFile FileName="UniversalRecord.xsd" MetadataType="Schema" ID="20f0be02-f3b7-4769-b812-1cae11b5c308" SourceId="1" SourceUrl="file:///D:/Rineesh/Confidential/LOGISTICS/GALILEO/travelport-uapi-tutorial-c-sharp-master/travelport-uapi-tutorial-c-sharp-master/ConsoleApplication1/ConsoleApplication1/Wsdl/universal_v40_0/UniversalRecord.xsd" />
+    <MetadataFile FileName="Air.xsd" MetadataType="Schema" ID="b7d6982c-5fc5-408e-83f0-8f94686f3aef" SourceId="1" SourceUrl="file:///D:/Rineesh/Confidential/LOGISTICS/GALILEO/travelport-uapi-tutorial-c-sharp-master/travelport-uapi-tutorial-c-sharp-master/ConsoleApplication1/ConsoleApplication1/Wsdl/air_v40_0/Air.xsd" />
+    <MetadataFile FileName="Cruise.xsd" MetadataType="Schema" ID="5aff4e72-468c-4ed1-85ae-950d5459c388" SourceId="1" SourceUrl="file:///D:/Rineesh/Confidential/LOGISTICS/GALILEO/travelport-uapi-tutorial-c-sharp-master/travelport-uapi-tutorial-c-sharp-master/ConsoleApplication1/ConsoleApplication1/Wsdl/cruise_v40_0/Cruise.xsd" />
+    <MetadataFile FileName="UniversalRecordServices.wsdl" MetadataType="Wsdl" ID="5f9835d4-8c15-490f-8202-a0db6d5375f3" SourceId="1" SourceUrl="file:///D:/Rineesh/Confidential/LOGISTICS/GALILEO/travelport-uapi-tutorial-c-sharp-master/travelport-uapi-tutorial-c-sharp-master/ConsoleApplication1/ConsoleApplication1/Wsdl/universal_v40_0/UniversalRecord.wsdl" />
+    <MetadataFile FileName="AbstractUniversalRecordServices.wsdl" MetadataType="Wsdl" ID="ea505c73-8e8c-4084-8491-cd573340ddee" SourceId="1" SourceUrl="file:///D:/Rineesh/Confidential/LOGISTICS/GALILEO/travelport-uapi-tutorial-c-sharp-master/travelport-uapi-tutorial-c-sharp-master/ConsoleApplication1/ConsoleApplication1/Wsdl/universal_v40_0/UniversalRecordAbstract.wsdl" />
+    <MetadataFile FileName="Passive.xsd" MetadataType="Schema" ID="a5603aba-6891-4574-a17c-40cebaef83de" SourceId="1" SourceUrl="file:///D:/Rineesh/Confidential/LOGISTICS/GALILEO/travelport-uapi-tutorial-c-sharp-master/travelport-uapi-tutorial-c-sharp-master/ConsoleApplication1/ConsoleApplication1/Wsdl/passive_v40_0/Passive.xsd" />
+    <MetadataFile FileName="Rail.xsd" MetadataType="Schema" ID="427f204c-5c56-4528-b901-2de995dd3915" SourceId="1" SourceUrl="file:///D:/Rineesh/Confidential/LOGISTICS/GALILEO/travelport-uapi-tutorial-c-sharp-master/travelport-uapi-tutorial-c-sharp-master/ConsoleApplication1/ConsoleApplication1/Wsdl/rail_v40_0/Rail.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
